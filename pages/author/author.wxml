@@ -1,0 +1,11 @@
+<!--pages/author/author.wxml-->
+<view class="author">
+    <text>一个搬砖仔</text>
+    <text>一个前端程序员</text> 
+    <text>一个头还没秃的年轻人</text>
+    <text decode="{{true}}">想给小程序提意见&nbsp;&nbsp;&nbsp;
+    或技术交流请联系：</text>
+    <text>QQ: 857228745</text>
+    <text>微信号：c13072161176</text>
+    <text>小程序github地址: </text> 
+</view>

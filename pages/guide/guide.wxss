@@ -1,0 +1,21 @@
+/* pages/guide/guide.wxss */
+image{
+  width: 500rpx;
+  height: 700rpx;
+  margin: 30rpx;
+}
+.guide .guide_index .title_index,.guide .guide_log .title_log,.guide .guide_mine .title_mine{
+  font-weight: bold;
+  margin: 30rpx 0 30rpx 20rpx;
+}
+
+.guide_index text,.guide_log text,.guide_mine text{
+  display: block;
+  margin: 30rpx 20rpx 30rpx 20rpx;
+}
+
+.divLine{
+  background-color: lightgray;
+  width: 100%;
+  height: 3rpx;
+ }

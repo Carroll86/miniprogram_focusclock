@@ -1,0 +1,30 @@
+<!--pages/guide/guide.wxml-->
+<view class="guide">
+    <view class="guide_index">
+      <view class="title_index">计时页面功能介绍：</view>
+      <text>之前看过一本书，书名叫《为什么精英都是时间控》，作者叫桦泽紫苑，他除了是一位日本作家外，还是一名神经科医生。
+     这本书主要就是介绍了作者通过医学、心理学、脑科学的知识，如何管理自己的时间，他将这种方法命名为"神之时间管理术"，有兴趣的朋友可以去看看这本书。
+     其中有一个很重要的法则就是：15·45·90法则 —— 人高度专注的状态一般只能持续15分钟，不会超过20分钟。也就是说15分钟可以看做专注力的一个时间单位。
+     45分钟一般是学生在课堂上专注力集中的时间，人的专注力持续极限是40分钟。无论是工作还是学习，我们最好以15分钟为基本时间单位，每隔15分钟小休息一下，每隔45分钟大休息一下，这样可以让我们的专注力持续更长的时间。
+     人体内还有一种周期性规律，叫做"亚昼夜节律"，英语是"ultradianrhythm"：人脑比较清醒的90分钟和产生倦意的20分钟会交替来到，形成一个循环。
+     </text>
+     <image src="/images/index_img.png" mode="aspectFit"></image>
+     <text style="color: tomato;">所以，我在首页设置了15·45·90三个时间点，选择时间和想进行的任务后点击开始专注即可进行一次的专注。</text>
+    </view>
+    <view class="divLine"></view>
+    <view class="guide_log">
+      <view class="title_log">统计首页功能介绍：</view>
+      <text>统计页面展示使用者每天的专注时间、次数，还有累计的时间以及次数，方便使用者清晰地看到自己的坚持成果。</text>
+      <image src="/images/log_img.png" mode="aspectFit"></image>
+    </view>
+    <view class="divLine"></view>
+    <view class="guide_mine">
+      <view class="title_mine">我的页面功能介绍：</view>
+      <image src="/images/mine_img.png" mode="aspectFit"></image>
+      <text decode="{{true}}">我的页面显示了当前使用者的用户信息，同时有程序中各功能的介绍，如果不登录是无法使用专注时钟的大部分功能哦。
+      功能指南是给第一次来到程序的用户做个功能介绍。
+      清空记录可以清空使用者的任务统计记录，慎用哦!
+      关于作者中有一些我的个人信息。
+      </text>
+    </view>
+</view>

@@ -1,0 +1,45 @@
+<!--index.wxml-->
+<view hidden="{{clockShow}}">
+  <view class="slider">
+    <slider min="1" max="90" activeColor="tomato" show-value backgroundColor="gray" value="{{time}}" bindchange="_sliderChange"></slider>
+  </view>
+  <view class="fiexd_time">
+    <view class="FT {{ft_index == 0 ? 'ftActive' : ''}}" data-min_15="15" 
+    data-index="0" bindtap="_changeMin">15分钟</view>
+    <view class="FT {{ft_index == 1 ? 'ftActive' : ''}}" data-min_45="45" 
+    data-index="1" bindtap="_changeMin">45分钟</view>
+    <view class="FT {{ft_index == 2 ? 'ftActive' : ''}}" data-min_90="90" 
+    data-index="2" bindtap="_changeMin">90分钟</view>
+  </view>
+  <view class="task_text">
+    <text class="task_title">选择一个任务</text>
+    <text class="task_desc">在接下来的{{time}}分钟，你将专注做这件事情</text>
+  </view>
+  <view class="task_cate">
+    <view class="cate_item" wx:for="{{cateArr}}" wx:key="key" bindtap="_clickCate" data-index="{{index}}">
+      <view class="cate-icon">
+        <image src="../../images/{{item.icon}}.png" mode="aspectFit"></image>
+      </view>
+      <view class="cate_text {{index == cateActive ? 'cate_text_active' : ''}}">{{item.text}}</view>
+    </view>
+  </view>
+  <view class="start" bindtap="_start">
+    开始专注
+  </view>
+</view>
+<view class="clock" hidden="{{!clockShow}}" style="height: {{clockHeight}}rpx;">
+  <view class="tips"> 养成一个微习惯，从5分钟开始。</view>
+  <view class="progress">
+    <canvas canvas-id="progress_bg" class="progress_bg"></canvas>
+    <canvas canvas-id="progress_active" class="progress_active"></canvas>
+    <view class="progress_text">{{timeStr}}</view>
+  </view>
+  <view class="Btns">
+    <view class="backBtn" bindtap="_back" wx:if="{{backShow}}">返回</view>
+    <view class="pauseBtn" bindtap="_pause" wx:if="{{pauseShow}}">暂停</view>
+    <view class="continueCancelBtn" wx:if="{{continueCancelShow}}">
+      <view class="continueBtn" bindtap="_continue">继续</view>
+      <view class="cancelBtn" bindtap="_cancel">放弃</view>
+    </view>
+  </view>
+</view>

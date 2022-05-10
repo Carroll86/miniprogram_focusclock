@@ -1,0 +1,67 @@
+<view class="mine_container">
+  <!--我的-- 登录头像区域 -->
+  <view class="header_container">
+    <view>
+      <view class="avatar">
+        <image src="{{isShowUserName ? userInfo.avatarUrl:'/images/user_avatar.png'}}" />
+      </view>
+      <view class="username_text" wx:if="{{isShowUserName}}">
+        <text>{{userInfo.nickName}}</text>
+      </view>
+      <view class="text" wx:if="{{!isShowUserName}}">
+        <button type="primary" bindtap="getUserProfile">登录</button>
+      </view>
+    </view>
+  </view>
+  <!-- 我的-- 功能区域 -->
+  <view class="feature_list">
+    <view class="all_list">
+      <block wx:for="{{featureItems}}" wx:key="key">
+        <navigator url="{{item.url}}" wx:for-index="index" data-index='{{index}}' bindtap="empty">
+          <button class='feature_item' open-type="redirect">
+            <!-- 功能图标 -->
+            <view class="feature_img">
+              <image src="{{item.icon}}" />
+            </view>
+            <!-- 功能文字 -->
+            <view class="feature_text">{{item.text}}</view>
+            <!-- 箭头符号 -->
+            <view class="arrow">
+              <image src="{{item.img}}" />
+            </view>
+          </button>
+        </navigator>
+        <!-- 分割线 -->
+        <view class="divLine"></view>
+      </block>
+    </view>
+  </view>
+<!-- 客服和反馈区域 -->
+  <view class="aftersale">
+    <view class="service">
+      <button open-type="contact">
+        <view class="service_icon">
+          <image src="/images/feature_contact.png"></image>
+        </view>
+        <view class="service_text">联系客服</view>
+        <view class="arrow">
+          <image src="/images/arrow_right.png"></image>
+        </view>
+      </button>
+    </view>
+    <view class="divLine"></view>
+    <!-- 反馈与意见 -->
+    <view class="feedback">
+      <button open-type="feedback">
+        <view class="feedback_icon">
+          <image src="/images/feature_feeback.png"></image>
+        </view>
+        <view class="feedback_text">意见反馈</view>
+        <view class="arrow">
+          <image src="/images/arrow_right.png"></image>
+        </view>
+      </button>
+    </view>
+    <view class="divLine"></view>
+  </view>
+</view>

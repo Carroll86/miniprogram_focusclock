@@ -1,0 +1,138 @@
+/**index.wxss**/
+.slider {
+  width: 600rpx;
+  margin: 80rpx auto 60rpx auto;
+}
+
+.fiexd_time{
+  display: flex;
+  margin-bottom: 30rpx;
+}
+
+.FT{
+  width: 160rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  background-color: tomato;
+  color: #fff;
+  border: 1px solid red;
+  border-radius: 30rpx;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.ftActive{
+  background-color: lightgreen
+}
+
+.task_text {
+  text-align: center;
+}
+
+.task_title {
+  display: block;
+  font-size: 35rpx;
+  font-weight: bold;
+  margin-bottom: 50rpx;
+}
+
+.task_desc {
+  font-size: 25rpx;
+  color: grey;
+  display: block;
+}
+
+.task_cate {
+  width: 600rpx;
+  height: 400rpx;
+  margin: 50rpx auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cate_item {
+  display: flex;
+  flex-direction: column;
+  /* border: 2rpx solid black; */
+}
+
+.cate-icon image {
+  width: 75rpx;
+  height: 60rpx;
+  /* background-color: cyan; */
+  margin: 20rpx 40rpx;
+}
+
+.task_cate .cate_text {
+  text-align: center;
+  font-size: 28rpx;
+}
+
+.task_cate .cate_text_active {
+  color: tomato;
+}
+
+.start {
+  width: 280rpx;
+  height: 90rpx;
+  border: 2rpx solid tomato;
+  border-radius: 30rpx;
+  margin: 80rpx auto;
+  text-align: center;
+  line-height: 88rpx;
+  color: tomato;
+}
+
+.tips {
+  text-align: center;
+  line-height: 80rpx;
+  height: 80rpx;
+}
+
+.clock {
+  /* height: 100vh; */
+  overflow: hidden;
+  background-color: tomato;
+}
+
+.progress {
+  width: 400rpx;
+  height: 400rpx;
+  margin: 140rpx auto;
+  position: relative;
+}
+
+.progress .progress_bg,
+.progress .progress_active {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 400rpx;
+  height: 400rpx;
+}
+
+.progress .progress_text {
+  width: 160rpx;
+  height: 60rpx;
+  color: #fff;
+  text-align: center;
+  line-height: 60rpx;
+  position: absolute;
+  left: 110rpx;
+  top: 160rpx;
+}
+
+.Btns .backBtn,
+.Btns .pauseBtn,
+.Btns .continueBtn,
+.Btns .cancelBtn {
+  width: 180rpx;
+  height: 80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 20rpx;
+  margin: 0 auto 30rpx auto;
+}

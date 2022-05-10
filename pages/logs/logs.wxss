@@ -1,0 +1,89 @@
+/* pages/logs/logs.wxss */
+.sum {
+  width: 750rpx;
+  height: 350rpx;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50rpx 0;
+  border-bottom: 3rpx solid lightgrey;
+}
+
+.sum .sum_item {
+  width: 350rpx;
+  height: 160rpx;
+  text-align: center;
+}
+
+.sum .sum_item .sum_item_title {
+  height: 120rpx;
+  line-height: 120rpx;
+  color: gray;
+  font-size: 30rpx;
+}
+
+.sum .sum_item .sum_item_val {
+  height: 40rpx;
+  line-height: 40rpx;
+  color: tomato;
+  font-size: 35rpx;
+  font-weight: 500
+}
+
+.detail {
+  width: 750rpx;
+  margin-top: 10rpx;
+}
+
+.detail .detail_title {
+  width: 750rpx;
+  display: flex;
+  padding: 15rpx 0;
+}
+
+.detail .detail_title .detail_title_text {
+  flex: 1;
+  padding-left: 100rpx;
+}
+
+.detail .detail_title .detail_title_type text {
+  padding-right: 40rpx;
+}
+
+.active {
+  color: tomato;
+}
+
+.list_item {
+  display: flex;
+}
+
+.list_item .list_item_date {
+  width: 300rpx;
+  font-size: 28rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  margin-left: 20rpx;
+}
+
+.list_item .list_item_cate {
+  width: 200rpx;
+  font-size: 28rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  margin-left: 25rpx;
+}
+
+.list_item .list_item_time {
+  width: 200rpx;
+  font-size: 28rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+}
+
+.detail_list_empty {
+  text-align: center;
+  margin-top: 20rpx;
+}

@@ -1,0 +1,13 @@
+/* pages/author/author.wxss */
+.author{
+  margin: 0 auto;
+  margin-top: 100rpx;
+}
+.author text{
+  height: 60rpx;
+  text-align: center;
+  font-size: 33rpx;
+  color: red;
+  display: block;
+  margin: 0rpx 20rpx 50rpx 10rpx;
+}

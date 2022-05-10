@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/logs/logs",
+    "pages/author/author",
+    "pages/guide/guide"
+  ],
+  "tabBar": {
+    "selectedColor": "#ff6347",
+    "list": [{
+        "pagePath": "pages/index/index",
+        "text": "计时",
+        "iconPath": "images/jishi.png",
+        "selectedIconPath": "images/jishi_sel.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "统计",
+        "iconPath": "images/tongji.png",
+        "selectedIconPath": "images/tongji_sel.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "images/mine.png",
+        "selectedIconPath": "images/mine_sel.png"
+      }
+
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff6347",
+    "navigationBarTitleText": "专注时钟",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
