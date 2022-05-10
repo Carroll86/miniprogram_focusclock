@@ -1,7 +1,10 @@
 /* pages/author/author.wxss */
+page{
+  background-color: rgba(211, 211, 211, 0.795);
+}
 .author{
   margin: 0 auto;
-  margin-top: 100rpx;
+  height: 100vh;
 }
 .author text{
   height: 60rpx;
@@ -9,5 +12,5 @@
   font-size: 33rpx;
   color: red;
   display: block;
-  margin: 0rpx 20rpx 50rpx 10rpx;
+  margin: 60rpx 20rpx 50rpx 10rpx;
 }
