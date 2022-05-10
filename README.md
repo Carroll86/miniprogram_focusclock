@@ -12,7 +12,7 @@ A miniprogram to manage and record your concentration
 第三个界面为我的界面，可以看到用户的登录信息以及一些对程序的文档功能说明。
 
 
-如果对这款小程序有什么反馈建议，请在Issues中留言告知我吧。
+如果您对这款小程序有什么反馈建议，请在Issues中留言告知我吧。
 
 
 
